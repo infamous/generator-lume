@@ -3,11 +3,6 @@
   "version": "0.0.0",
   "description": "Generate a lume application starter.",
   "homepage": "https://infamous.io",
-  "author": {
-    "name": "Joe Pea",
-    "email": "joe@trusktr.io",
-    "url": ""
-  },
   "files": [
     "generators"
   ],
