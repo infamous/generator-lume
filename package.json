@@ -1,69 +1,78 @@
 {
-  "name": "generator-lume",
-  "version": "0.0.0",
-  "description": "Generate a lume application starter.",
-  "homepage": "https://infamous.io",
-  "files": [
-    "generators"
-  ],
-  "main": "generators/index.js",
-  "keywords": [
-    "",
-    "yeoman-generator"
-  ],
-  "devDependencies": {
-    "yeoman-test": "^1.7.0",
-    "yeoman-assert": "^3.1.0",
-    "eslint": "^6.0.1",
-    "prettier": "^1.18.2",
-    "husky": "^3.0.1",
-    "lint-staged": "^9.2.0",
-    "eslint-config-prettier": "^6.0.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-config-xo": "^0.26.0",
-    "jest": "^24.8.0"
-  },
-  "engines": {
-    "npm": ">= 4.0.0"
-  },
-  "dependencies": {
-    "yeoman-generator": "^2.0.1",
-    "chalk": "^2.1.0",
-    "yosay": "^2.0.1"
-  },
-  "jest": {
-    "testEnvironment": "node"
-  },
-  "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ],
-    "*.json": [
-      "prettier --write",
-      "git add"
-    ]
-  },
-  "eslintConfig": {
-    "extends": [
-      "xo",
-      "prettier"
-    ],
-    "env": {
-      "jest": true,
-      "node": true
-    },
-    "rules": {
-      "prettier/prettier": "error"
-    },
-    "plugins": [
-      "prettier"
-    ]
-  },
-  "scripts": {
-    "pretest": "eslint .",
-    "test": "jest"
-  },
-  "repository": "infamous/generator-lume",
-  "license": "LGPL-3.0"
+	"name": "generator-lume",
+	"version": "0.0.0",
+	"description": "Generate a lume application starter.",
+	"homepage": "https://infamous.io",
+	"files": [
+		"generators"
+	],
+	"main": "generators/index.js",
+	"keywords": [
+		"",
+		"yeoman-generator"
+	],
+	"devDependencies": {
+		"eslint": "^6.0.1",
+		"eslint-config-prettier": "^6.0.0",
+		"eslint-config-xo": "^0.26.0",
+		"eslint-plugin-prettier": "^3.1.0",
+		"husky": "^3.0.1",
+		"jest": "^24.8.0",
+		"lint-staged": "^9.2.0",
+		"prettier": "^1.18.2",
+		"yeoman-assert": "^3.1.0",
+		"yeoman-test": "^1.7.0"
+	},
+	"engines": {
+		"npm": ">= 4.0.0"
+	},
+	"dependencies": {
+		"yeoman-generator": "^2.0.1",
+		"chalk": "^2.1.0",
+		"yosay": "^2.0.1"
+	},
+	"jest": {
+		"testEnvironment": "node"
+	},
+	"lint-staged": {
+		"*.js": [
+			"eslint --fix",
+			"git add"
+		],
+		"*.json": [
+			"prettier --write",
+			"git add"
+		]
+	},
+	"eslintConfig": {
+		"extends": [
+			"xo",
+			"prettier"
+		],
+		"env": {
+			"jest": true,
+			"node": true
+		},
+		"rules": {
+			"prettier/prettier": "error"
+		},
+		"plugins": [
+			"prettier"
+		]
+	},
+	"scripts": {
+		"pretest": "eslint .",
+		"test": "jest",
+		"prettier": "npm run prettier-js -- --write && npm run prettier-md -- --write",
+		"prettier-list": "npm run --silent prettier-js-list && npm run --silent prettier-md-list",
+		"prettier-js": "prettier './**/*.{js,json}'",
+		"prettier-md": "prettier './**/*.md'",
+		"prettier-js-list": "prettier './**/*.{js,json}' --list-different || true",
+		"prettier-md-list": "prettier './**/*.md' --list-different || true",
+		"prettier-check": "npm run --silent prettier-js-check && npm run --silent prettier-md-check",
+		"prettier-js-check": "prettier './**/*.{js,json}' --check",
+		"prettier-md-check": "prettier './**/*.md' --check"
+	},
+	"repository": "infamous/generator-lume",
+	"license": "LGPL-3.0"
 }

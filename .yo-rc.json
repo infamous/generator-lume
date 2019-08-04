@@ -1,9 +1,9 @@
 {
-  "generator-node": {
-    "promptValues": {
-      "authorName": "Joe Pea",
-      "authorEmail": "joe@trusktr.io",
-      "authorUrl": ""
-    }
-  }
+	"generator-node": {
+		"promptValues": {
+			"authorName": "Joe Pea",
+			"authorEmail": "joe@trusktr.io",
+			"authorUrl": ""
+		}
+	}
 }
