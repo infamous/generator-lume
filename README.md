@@ -59,7 +59,8 @@ Arguments:
 ```
 
 For more information on what features a scaffolded NPM package has, see the
-generator's [README](./generators/npm-package/templates/README.md)
+[README](./generators/npm-package/templates/README.md) template that is
+outputted into a scaffolded NPM package.
 
 ## License
 
