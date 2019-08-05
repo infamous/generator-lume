@@ -3,6 +3,7 @@
 	"description": "Description of the package. TODO automate this.",
 	"version": "<%= pkgVersion %>",
 	"license": "MIT",
+	"main": "src/index.js",
 	"scripts": {
 		"clean": "builder run build:clean",
 		"build": "builder run build:prod",
