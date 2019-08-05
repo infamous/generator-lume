@@ -20,7 +20,7 @@ export = class LumeGenerator extends Generator {
 		})
 
 		this.option('dir', {
-			description: 'The directory where the generated package will be output. Defaults to ./<packageName>',
+			description: 'The output directory. Defaults to ./<packageName>',
 			type: String,
 			default: '',
 		})
