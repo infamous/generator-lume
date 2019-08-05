@@ -59,7 +59,7 @@ Arguments:
 ```
 
 For more information on what features a scaffolded NPM package has, see the
-generator's [README](./generators/npm-package/README.md)
+generator's [README](./generators/npm-package/templates/README.md)
 
 ## License
 
