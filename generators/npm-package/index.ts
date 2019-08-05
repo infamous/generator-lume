@@ -66,6 +66,8 @@ export = class LumeGenerator extends Generator {
 			}
 		}
 
+		this.options.pkgVersion = (this.pkg && this.pkg.version) || '0.0.0'
+
 		this._validatePackageName()
 
 		this.destinationRoot(this.folder)

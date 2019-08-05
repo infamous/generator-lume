@@ -1,7 +1,7 @@
 {
 	"name": "<%= packageName %>",
 	"description": "Description of the package. TODO automate this.",
-	"version": "0.0.0",
+	"version": "<%= pkgVersion %>",
 	"license": "MIT",
 	"scripts": {
 		"clean": "builder run build:clean",
